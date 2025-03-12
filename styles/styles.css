@@ -1,27 +1,54 @@
 nav {
     background-color: darkblue;
     padding: 10px;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: white;
     display: block;
     padding: 20px;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: darkblue;
-  }
-  
-  img {
+}
+
+/* Make existing img selector more specific */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-  }
-  
-  p {
-    padding: 10px;
-  }
-  
+}
+
+p {
+    padding: 0; /* Changed padding to 0 */
+}
+
+main {
+    width: 70%; /* Limit main width */
+    margin: 0 auto; /* center main */
+}
+
+aside {
+    width: 25%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    float: right;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    clear: both;
+}
