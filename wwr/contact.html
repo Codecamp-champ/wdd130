@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RiverRiders Fernie Rafting</title>
+    <meta name="description" content="Contact RiverRiders Fernie for inquiries, reservations, or website suggestions. Reach us by phone, email, or visit our location.">
+    <meta name="author" content="Aaron Coker">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        .employee-profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .map-container iframe{
+            width: 100%; /* Make map responsive */
+            height: 400px; /* Adjust height as needed */
+        }
+        .map-container{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/z-splash.png" alt="RiverRiders Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero_transparency_1024.png" alt="Contact Us Hero Image">
+            <h1>Contact RiverRiders Fernie</h1>
+        </div>
+
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <address>
+                <p>123 River Road</p>
+                <p>Fernie, BC, V0B 1M0</p>
+                <p>Phone: (250) 222-1234</p>
+                <p>Email: info@riverridersfernie.com</p>
+            </address>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.137887532386!2d-115.06827052303534!3d49.50156907137025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5303c735d4653611%3A0x6295240217646503!2sFernie%2C%20BC!5e0!3m2!1sen!2sca!4v1708170257322!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee-profile">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>Sarah, Guide & Safety Expert</figcaption>
+            </div>
+            <div class="employee-profile">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Mike, Operations Manager</figcaption>
+            </div>
+            <div class="employee-profile">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Emily, Customer Service</figcaption>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Purpose of Message:</label>
+                <input type="radio" id="general" name="purpose" value="general">
+                <label for="general">General Inquiry</label><br>
+
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation Question</label><br>
+
+                <input type="radio" id="website" name="purpose" value="website">
+                <label for="website">Website Suggestion</label><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 RiverRiders Fernie | Created by Aaron Coker</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <p><a href="wireframe_contact.png">Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
