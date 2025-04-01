@@ -18,13 +18,23 @@ header, main, footer {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
 }
 
 header img {
     max-height: 80px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 20px;
 }
 
 h1, h2, h3 {
@@ -40,9 +50,98 @@ p {
 .hero {
     position: relative;
     text-align: center;
-    color: white;
+    margin-top: 20px;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.mission-article {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    width: 60%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.mission-article img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+    float: right;
+}
+
+.mission-article p {
+    flex: 1;
+}
+
+#history .history-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#history .history-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.adventure-images figure {
+    margin: 0;
+    text-align: center;
+}
+
+adventure-images figure img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer a img {
+    text-decoration: none;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+    /* color: white; Removed white color */
 .hero img {
     width: 100%;
     height: auto;
@@ -54,7 +153,7 @@ p {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    /* color: white; Removed white color */
     font-size: 3em;
     text-align: center;
 }
@@ -88,9 +187,14 @@ p {
     justify-content: center;
 }
 
-.adventure-images img {
-    max-width: 200px;
+.adventure-images figure {
     margin: 10px;
+    text-align: center;
+}
+
+adventure-images figure img {
+    max-width: 200px;
+    display: block;
 }
 
 footer {
