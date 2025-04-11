@@ -281,10 +281,15 @@ footer a img {
 
 #contact-form button:hover {
     /* Get the RGB values of the accent color */
-    --r: red(var(--accent2-color));
-    --g: green(var(--accent2-color));
-    --b: blue(var(--accent2-color));
+    --r-orig: red(var(--accent2-color));
+    --g-orig: green(var(--accent2-color));
+    --b-orig: blue(var(--accent2-color));
 
-    /* Reduce the RGB values slightly to darken */
-    background-color: rgb(max(0, var(--r) - 20), max(0, var(--g) - 20), max(0, var(--b) - 20));
+    /* Calculate the darkened values */
+    --r-dark: max(0, var(--r-orig) - 20);
+    --g-dark: max(0, var(--g-orig) - 20);
+    --b-dark: max(0, var(--b-orig) - 20);
+
+    /* Apply the darkened RGB values */
+    background-color: rgb(var(--r-dark), var(--g-dark), var(--b-dark));
 }
