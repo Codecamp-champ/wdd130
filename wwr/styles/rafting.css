@@ -53,7 +53,7 @@ img {
 }
 
 .button:hover {
-    background-color: darken(var(--accent1-color), 10%);
+    background-color: #e0a800; /* Slightly darker gold */
     text-decoration: none;
 }
 
@@ -167,7 +167,7 @@ main {
 }
 
 .newsletter button:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: #004494; /* Slightly darker blue */
 }
 
 /* Call to Action */
@@ -413,7 +413,7 @@ main {
 }
 
 #contact-form button[type="submit"]:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: #004494; /* Slightly darker blue */
 }
 
 /* Footer */
