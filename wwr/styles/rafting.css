@@ -3,6 +3,7 @@
     --secondary-color: #2f4858;
     --accent1-color: #c0c0c0;
     --accent2-color: #dd5143;
+    --accent2-darker: #b04035; /* Define the darker shade */
 }
 
 body {
@@ -280,13 +281,5 @@ footer a img {
 }
 
 #contact-form button:hover {
-    /* Get the RGB values of the accent color */
-    --r-orig: red(var(--accent2-color));
-    --g-orig: green(var(--accent2-color));
-    --b-orig: blue(var(--accent2-color));
-
-    /* Apply the darkened RGB values with clamping directly */
-    background-color: rgb(max(0, calc(var(--r-orig) - 20)),
-                         max(0, calc(var(--g-orig) - 20)),
-                         max(0, calc(var(--b-orig) - 20)));
+    background-color: var(--accent2-darker);
 }
