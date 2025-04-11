@@ -280,5 +280,11 @@ footer a img {
 }
 
 #contact-form button:hover {
-    background-color: color-mix(in srgb, var(--accent2-color), black 10%);
+    /* Get the RGB values of the accent color */
+    --r: red(var(--accent2-color));
+    --g: green(var(--accent2-color));
+    --b: blue(var(--accent2-color));
+
+    /* Reduce the RGB values slightly to darken */
+    background-color: rgb(max(0, var(--r) - 20), max(0, var(--g) - 20), max(0, var(--b) - 20));
 }
