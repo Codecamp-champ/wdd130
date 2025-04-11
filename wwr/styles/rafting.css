@@ -280,5 +280,5 @@ footer a img {
 }
 
 #contact-form button:hover {
-    background-color: color-mix(in srgb, var(--accent2-color) 90%, black 10%);
+    background-color: color-mix(in srgb, var(--accent2-color), black 10%);
 }
