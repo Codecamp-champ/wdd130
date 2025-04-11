@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | RiverRiders Fernie Rafting</title>
-    <meta name="description" content="Contact RiverRiders Fernie for inquiries, reservations, or website suggestions. Reach us by phone, email, or visit our location.">
+    <title>Home | RiverRiders Fernie Rafting</title>
+    <meta name="description" content="Experience the thrill of white water rafting on the Elk River with RiverRiders Fernie. Book your adventure today!">
     <meta name="author" content="Aaron Coker">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="images/z-splash.png" alt="RiverRiders Logo">
+        <img src="images/z-splash.png" alt="RiverRiders Logo - stylized splash">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -23,84 +23,59 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero_transparency_1024.png" alt="Contact Us Hero Image">
-            <h1>Contact RiverRiders Fernie</h1>
-        </div>
-
-        <section id="contact-info">
-            <h2>Contact Information</h2>
-            <address>
-                <p>123 River Road</p>
-                <p>Fernie, BC, V0B 1M0</p>
-                <p>Phone: (250) 222-1234</p>
-                <p>Email: info@riverridersfernie.com</p>
-            </address>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0000!2d0000!3d0000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTIzIFJpdmVyIFJvYWQsIEZlcm5pZSwgQkMgVjBCIDFNMA!5e0!3m2!1sen!2sus!4v0000000000000!5m2!1sen!2sus" width="600" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="hero">
+            <img src="images/hero_home_1920.jpg" alt="Exciting rafting adventure on the Elk River">
+            <div class="hero-content">
+                <h1>Experience the Wild Elk River</h1>
             </div>
         </section>
 
-        <section id="employee-profiles">
-            <h2>Meet Our Team</h2>
-            <div class="employee-profile">
-                <figure>
-                    <img src="images/Sarah.jpeg" alt="Sarah, Guide & Safety Expert">
-                    <figcaption>Sarah, Guide & Safety Expert</figcaption>
-                </figure>
-            </div>
-            <div class="employee-profile">
-                <figure>
-                    <img src="images/Mike.jpeg" alt="Mike, Operations Manager">
-                    <figcaption>Mike, Operations Manager</figcaption>
-                </figure>
-            </div>
-            <div class="employee-profile">
-                <figure>
-                    <img src="images/Emily.jpeg" alt="Emily, Customer Service">
-                    <figcaption>Emily, Customer Service</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section id="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label>Purpose of Message:</label>
-                <input type="radio" id="general" name="purpose" value="general">
-                <label for="general">General Inquiry</label><br>
-
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label><br>
-
-                <input type="radio" id="website" name="purpose" value="website">
-                <label for="website">Website Suggestion</label><br>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
-
-                <button type="submit">Submit</button>
+        <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form>
+                <div>
+                    <label for="name-input">Name:</label>
+                    <input type="text" id="name-input" name="name">
+                </div>
+                <div>
+                    <label for="email-input">Email:</label>
+                    <input type="email" id="email-input" name="email">
+                </div>
+                <button type="submit">Subscribe Now</button>
             </form>
         </section>
+
+        <section class="call-to-action">
+            <p>Ready for an unforgettable adventure?</p>
+            <a href="trips.html" class="button">View Our Trips</a>
+        </section>
+
+        <section class="grid-content">
+            <article class="company-purpose">
+                <img src="images/rafting_purpose1_600.jpg" alt="Our commitment to safety">
+                <h3>Safety First</h3>
+                <p>At RiverRiders, your safety is our top priority. Our experienced guides are certified and our equipment is regularly inspected to ensure a secure and enjoyable experience on the river.</p>
+            </article>
+            <article class="company-offerings">
+                <img src="images/rafting_offerings1_600.jpg" alt="Variety of rafting trips">
+                <h3>Diverse Adventures</h3>
+                <p>We offer a range of rafting trips to suit all skill levels and preferences, from half-day scenic floats to multi-day wilderness expeditions. Discover the perfect adventure for you!</p>
+            </article>
+            <article class="environmental-commitment">
+                <img src="images/rafting_environment_600.jpg" alt="Our respect for the environment">
+                <h3>Respecting the River</h3>
+                <p>We are committed to the preservation of the Elk River and its surrounding environment. We followLeave No Trace principles and strive to minimize our impact on this natural treasure.</p>
+            </article>
+            <div class="grid-layout-example"></div> </section>
     </main>
 
     <footer>
         <p>© 2025 RiverRiders Fernie | Created by Aaron Coker</p>
         <div class="social-media">
-            <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook"></a>
-            <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook logo"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram logo"></a>
         </div>
-        <p><a href="wireframe_contact.png">Contact Us Wireframe</a></p>
     </footer>
 </body>
 </html>
